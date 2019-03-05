@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+    <head>
+        <title>Grikana Blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        
+    </head>
+    <body>
+        <div align=center class=page-header>
+            <h1><a href="/">WANTED</a></h1>
+            <p>Playboy<br>Rashititel serdec</p>
+            <img height=50% src="http://i.piccy.info/i9/4c5fa6209ed6de6b73c12b0edc4dafd6/1551732280/45474/1305615/12.jpg" alt="Grikan">
+        </div>
+        <div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+        
+    </body>
+</html>

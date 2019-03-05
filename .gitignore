@@ -3,6 +3,5 @@
 *~
 __pycache__
 testenv
-db.sqlite3
 /static
 .DS_Store
