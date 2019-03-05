@@ -8,14 +8,14 @@
             <p>Playboy<br>Rashititel serdec</p>
             <img src="http://i.piccy.info/i9/4c5fa6209ed6de6b73c12b0edc4dafd6/1551732280/45474/1305615/12.jpg" alt="Grikan">
         </div>
-    {% for post in posts %}
-        <div>
-        <hr>
-            <p> Published {{ post.published_date }} </p>
-            <h1><a href=''> {{post.title}}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
+        {% for post in posts %}
+            <div>
+            <hr>
+                <p> Published {{ post.published_date }} </p>
+                <h1><a href=''> {{post.title}}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
         
     </body>
 </html>
