@@ -8,17 +8,14 @@
             <p>Playboy<br>Rashititel serdec</p>
             <img src="http://i.piccy.info/i9/4c5fa6209ed6de6b73c12b0edc4dafd6/1551732280/45474/1305615/12.jpg" alt="Grikan">
         </div>
-
+    {% for post in posts %}
         <div>
-            <h1 align=center>Osobo opasen</h1>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <hr>
+            <p> Published {{ post.published_date }} </p>
+            <h1><a href=''> {{post.title}}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+    {% endfor %}
+        
     </body>
 </html>
